@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+  overflow-x: hidden;
+
+  --Brand-Primary: #4caf4f;
+  --btn-hover: #388e3b;  
+  --Text-Gray-900: #18191f;
+  --Neutral-D-Grey: #4D4D4D;  
+  --Neutral-Grey: #717171;
+  --Neutral-L-Grey: #89939e;
+  --Neutral-Black: #263238;
+  --Neutral-Silver: #f5f7fa;
+  --Tint-T5: #E8F5E9;
+
+  --Default-White:#FFF;
+  --Neutral-White:#FFF; 
+
+  --Transition-All: all 0.3s ease-in-out;
+
+}
+
+
+/*!Slider */
+.slick-dots {
+  @apply !static pb-10; 
+}
+.slick-dots {
+  position: static !important;
+  margin-bottom: 2rem ;
+}
+.slick-dots li button:before {
+  font-size: 12px !important;
+  opacity: 1 !important;
+  color: #c4c4c4 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4caf50 !important;
+  opacity: 1 !important;
+}
+
+
+
+
+
+
+@layer components {
+   .transition-custom {
+     transition: var(--Transition-All);
+   }
+   .btn-primary {
+       @apply py-[14px] px-[32px] rounded-[6px] bg-[var(--Brand-Primary)] secondary-title text-[var(--Default-White)] 
+       hover:bg-[var(--btn-hover)]  transition-custom;
+   }
+  .container-custom {
+    @apply max-w-full custom1265:max-w-[90%] mx-auto px-4 sm:px-6;
+  }
+   .main-title {
+     @apply font-semibold leading-tight lg:leading-[76px] font-[Inter] text-[36px];
+  }
+  .secondary-title {
+    @apply font-[Inter] text-[16px] font-normal not-italic;
+  }
+
+  
+
+  /*!underline */
+  .nav-link {
+    @apply relative inline-block pb-[4px];
+    &::after {
+      content: "";
+      @apply absolute left-0 bottom-0 h-[2px] w-0 bg-[var(--Brand-Primary)] transition-custom ;
+    }
+    &:hover::after {
+      @apply w-full;
+    }
+    &.font-semibold::after {
+      @apply w-full;
+    }
+  }
+}
