@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <div className="w-full relative z-50 bg-[var(--Neutral-Silver)]">
-      <div className="container-custom flex justify-between items-center py-4">
+      <div className="container-custom flex justify-between items-center py-5">
 
         <div>
           <img src="/NavBar/Logo.svg" alt="Logo" />
