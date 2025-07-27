@@ -1,5 +1,3 @@
-
-
 import Illustration from "../assets/images/Illustration.png"
 
 function SlideContent() {

@@ -39,7 +39,8 @@ function NavBar() {
           <button className="py-2.5  px-5 rounded-md border border-transparent hover:border-[var(--Brand-Primary)] text-[var(--Brand-Primary)] secondary-title transition-custom ">  
               Login
           </button>
-          <button className="py-2.5 px-5 rounded-md   bg-[var(--Brand-Primary)] secondary-title text-[var(--Default-White)]">
+          <button className="py-2.5 px-5 rounded-md   bg-[var(--Brand-Primary)] secondary-title text-[var(--Default-White)]
+           hover:bg-[var(--btn-hover)]  transition-custom">
             Sign up
           </button>
         </div>

@@ -1,4 +1,3 @@
-// pages/Home.tsx
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,8 +13,7 @@ import SlideContent from "../components/SlideContent";
 import CommunitySection from "../components/CommunitySection";
 import CartSection from "../components/CartSection";
 
-import { Icons } from "../Contant/GenerList";
-import { Counts } from "../Contant/GenerList";
+import { Icons, Counts } from "../Contant/GenerList";
 
 function Home() {
   return (
